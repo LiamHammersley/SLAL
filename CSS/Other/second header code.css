@@ -1,0 +1,109 @@
+.second-header {
+		display: inline-block;
+		position: relative;
+		z-index: -1;
+		height: 40px;
+		width: 100%;
+		background: #5F647F;
+		/*Drop shadow properties up under header*/
+	}
+
+	.minimise-second-header {
+		position: relative;
+		float: left;
+		display: inline-block;
+		height: 15px;
+		clear: right;
+		/*margin-top: 12px;*/
+		margin: 11px 0 0 1.15%;
+	}
+
+	.minimise-second-header a {
+		display: inline-block;
+		width: 0px;
+		height: 0px;
+		border-style: solid;
+		border-width: 0 8px 10px 8px;
+		border-color: transparent transparent rgba(0, 61, 127, .7) transparent;
+	}
+
+	.second-header-links-left {
+		display: inline-block;
+		position: relative;
+		float: left;
+		clear: right;
+		margin-left: 1.50%;
+	}
+
+	.second-header-links-left ul {
+		margin-top: 10px;
+		margin-left: -40px;
+	}
+
+	.second-header-links-left ul li {
+		float: left;
+		list-style: none;
+		font-family:'Raleway-Light', sans-serif;
+		font-size: 1.25em;
+		margin-right: 15px;
+		vertical-align: middle;
+	}
+
+	.second-header-links-left ul li a {
+		color: #FFF;
+	}
+
+	.second-header-links-left ul li a:hover {
+		color: #4CCAFE;
+	}
+
+	.second-header-login {
+		float: right;
+		position: relative;
+		right: 0.15%;
+	}
+
+	#login-with {
+		float: left;
+		height: 40px;
+		width: 80px;
+		padding-left: 10px;
+	}
+
+	#login-with p {
+		color: #FFF;
+		font-size: 1.25em;
+		margin-top: 10px;
+		margin-right: 12px;
+		font-family: 'Raleway-Light', sans-serif;
+		text-align: center;
+	}
+
+	#fb-login,
+	#gplus-login {
+		height: 40px;
+		width: 80px;
+	}
+
+	#fb-login {
+		float: left;
+		background: rgb(74, 110, 168);
+		box-shadow: 
+	}
+
+	#gplus-login {
+		float: right;
+		background: rgb(218, 72, 55);
+	}
+
+	#fb-login img {
+		display: block;
+		margin: 0 auto;
+		height: 40px;			
+	}
+
+	#gplus-login img {
+		display: block;
+		margin: 0 auto;
+		height: 40px;
+	}

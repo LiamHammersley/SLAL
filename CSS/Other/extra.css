@@ -1,0 +1,114 @@
+	.mobile-menu {
+			visibility: hidden;
+			float: left;
+			position: absolute;
+			top: 0;
+			/*left: -310px;*/
+			display: block;
+			height: 100%;
+			width: 300px;
+			margin: 0 0 0 0;
+			background: url('../img/aperture-blades.png') #FFF no-repeat;
+			background-position: 50% 97%;
+			position: relative;
+			-webkit-box-shadow: 3px 0px 9px 0px rgba(50, 50, 50, 0.75);
+			-moz-box-shadow: 3px 0px 9px 0px rgba(50, 50, 50, 0.75);
+			box-shadow: 3px 0px 9px 0px rgba(50, 50, 50, 0.75);
+		}
+
+		.menu-social-logins {
+			width: 100%;
+			height: 57px;
+			position: absolute;
+			bottom: 95px;
+		}
+
+		.mobile-menu-fb-login {
+			float: left;
+			display: inline-block;
+			width: 50%;
+			background: #4a6ea9;
+		}
+
+		.mobile-menu-fb-login img {
+			display: block;
+			margin: auto;
+		}
+
+		.mobile-menu-gplus-login {
+			float: right;
+			display: inline-block;
+			width: 50%;
+			background: #db4937;
+		}
+
+		.mobile-menu-gplus-login img {
+			display: block;
+			margin: auto;
+		}
+
+	}
+
+/* --------------------------------------------------------------------------------*/
+/* -------------------------------- Search Box ------------------------------------*/
+/* --------------------------------------------------------------------------------*/
+
+	.search {
+		float: right;
+		position: top;
+		margin: 0.75% 1% 0 0;
+	}
+
+	.search-box {
+		display: inline-block;
+		float: left;
+		height: 33px;
+		width: 290px;
+		font-family: "Raleway-Light", sans-serif;
+		font-size: 1em;
+		color: rgba(0, 0, 0, .6);
+		border: 1px solid #D6D6D6;
+		border-right: 0;
+		padding: 0 0 0 8px;
+	}
+
+	.search-submit {
+		display: inline-block;
+		float: right;
+		height: 35px;
+		width: 40px;
+		background: url('../img/search.png') white no-repeat center;
+		border: 1px solid #D6D6D6;
+	}
+
+
+/* --------------------------------------------------------------------------------*/
+/* ---------------------------- CSS Transistions ----------------------------------*/
+/* --------------------------------------------------------------------------------*/
+
+	/*	Animations - WebKit only
+	/* --------------------------------------------------------------------------------*/
+
+	.mobile-menu {
+		-webkit-animation: slide-in-menu .5s cubic-bezier(.19,.68,.72,.99) forwards paused;
+	}
+
+	.mobile-header {
+		-webkit-animation: slide-in-header .5s cubic-bezier(.19,.68,.72,.99) forwards paused;
+	}
+
+	/*	Keyframes - WebKit only
+	/* --------------------------------------------------------------------------------*/
+
+	@-webkit-keyframes slide-in-menu {
+		100% { left: 0px; }
+	}
+
+	@-webkit-keyframes slide-in-header {
+		100% {left: 300px;}
+	}
+
+
+
+
+
