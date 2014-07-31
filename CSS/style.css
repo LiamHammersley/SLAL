@@ -391,20 +391,28 @@
 /*                                  Login Box                                      */
 /* --------------------------------------------------------------------------------*/
 
-#login {
+.login {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 25%;
+	left: 0;
+	right: 0;
 	width: 425px;
-	height: 325px;
-	background: rgba(255,255,255,.95);
+	height: 360px;
+	background: rgba(255,255,255,1);
 	font-family: 'Raleway-Light', sans-serif;
 }
 
 #login-header {
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 3%;
+	margin-right: 3%;
 	color: black;
 }
 
 #login-header h1 {
+	color: rgb(15, 117, 189);
+	margin-top: 10px;
 	text-align: center;
 }
 
@@ -436,11 +444,45 @@
 
 #login-buttonLogin {
 	color: white;
-	background: green;
-	width: 100%;
-	height: 45px;
+	background: rgba(120, 207, 109, 1);
 	border-style: none;
+	border-bottom: 5px solid rgba(100,173,90,.8);
+	width: 100%;
+	height: 55px;
 	text-align: center;
+	font-size: 1.5em;
+	margin-top: 12px;
+}
+
+#login-reg-forgot {
+	margin-top: 5px;
+	text-align: center;
+	font-size: 1em;
+}
+
+#login-reg-forgot ul {
+	list-style-type: none; 
+	padding: 0;
+	margin: 0;
+}
+
+#login-reg-forgot li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+#login-reg-forgot ul li a {
+	margin: 0;
+	padding: 0;
+}
+
+#login-reg-forgot li:first-child {
+	margin-right: 5px;
+}
+
+#login-reg-forgot li:last-child {
+	margin-left: 5px;
 }
 
 .border {
@@ -500,9 +542,6 @@
 			margin: 0;
 			width: 100%;
 			border-right: 0;
-
-			/*border: 1px solid yellow;
-			box-sizing: border-box;*/
 		}
 
 		.menu-links {
