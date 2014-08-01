@@ -6,25 +6,110 @@
 		<link rel="stylesheet" type="text/css" href="css/fonts.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="shortcut icon" href="favicon.ico"/>
+		<style>
+			.login {
+				position: absolute;
+				margin-left: auto;
+				margin-right: auto;
+				top: 25%;
+				left: 0;
+				right: 0;
+				width: 425px;
+				height: 365px;
+				background: rgba(255,255,255,1);
+				font-family: 'Raleway-Light', sans-serif;
+			}
+
+			#login-close a {
+				font-family: 'Raleway-Light', sans-serif;
+				color: rgba(0, 0, 0, .6);
+				float: right;
+				margin: 6px 8px 0 0;
+			}
+
+			#login-header {
+				margin-bottom: 10px;
+			}
+
+			#login-header h1 {
+				color: rgb(15, 117, 189);
+				text-align: center;
+			}
+
+			#login-header p {
+				color: black;
+				text-align: justify;
+				margin: 0 3% 0 3%;
+			}
+
+			#login-content {
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			#login-inputUsername,
+			#login-inputPassword {
+				width: 100%;
+				height: 30px;
+				font-size: 1.1em;
+				margin: 5px 0;
+			}
+
+			#login-inputPassword {
+				margin-bottom: 15px;
+			}
+
+			#login span {
+				color: black;
+			}
+
+			#login-buttonLogin {
+				color: white;
+				background: rgba(120, 207, 109, 1);
+				border-style: none;
+				border-bottom: 5px solid rgba(100,173,90,.8);
+				width: 100%;
+				height: 55px;
+				text-align: center;
+				font-size: 1.5em;
+				margin-top: 12px;
+			}
+
+			#login-reg-forgot {
+				color: rgb(15, 117, 189);
+				padding-top: 5px;
+				text-align: center;
+			}
+
+			#login-reg-forgot a:first-child {
+				float: left;
+				margin-left: 10px;
+			}
+			#login-reg-forgot a:last-child {
+				float: right;
+				margin-right: 10px;
+			}
+		</style>
 	</head>
 <div class="login">
+	<div id="login-close">
+		<span><a href="#">X</a></span>
+	</div>
 	<div id="login-header">
 		<h1>Login</h1>
 		<p>To gain acess to all the awesome location information please login with your username / email address and password.</p>
 	</div>
 	<div id="login-content">
-		<input type="text" id="login-inputUsername" value="Username or E-Mail"><br>
-		<input type="password" id="login-inputPassword" value="Password"><br>
+		<input type="text" id="login-inputUsername" value="Username or E-Mail" onfocus="if(this.value=='Username or E-Mail') this.value='';"><br>
+		<input type="password" id="login-inputPassword" value="Password" onfocus="if(this.value=='Password') this.value='';"><br>
 		<input type="checkbox" name="login-checkboxRememberMe"><span>&nbsp;Remember me?</span><br>
 	</div>
 	<div>
 		<button id="login-buttonLogin">Login</button>
 	</div>
-	<nav>
-		<ul id="login-reg-forgot">
-			<li><a href="#">Register</a></li>
-			<li><a href="#">Forgot Password</a></li>
-		</ul>
+	<nav id="login-reg-forgot">
+		<a href="#">Register</a>
+		<a href="#">Forgotten Password?</a>
 	</nav>
 </div>
-

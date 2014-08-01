@@ -233,7 +233,6 @@
 /*--------------------------------- Login ------------------------------------------*/
 
 	.menu-login {
-		display: table;
 		margin: 0;
 		padding: 0;
 		position: absolute;
@@ -248,11 +247,6 @@
 		font-family: 'Raleway-regular', sans-serif;
 		color: white;
 		font-size: 1.5em;
-	}
-
-	.menu-login span {
-		display: table-cell;
-		vertical-align: middle;
 	}
 
 /*--------------------------------- Copyright --------------------------------------*/
@@ -391,7 +385,9 @@
 
 		.menu,
 		.menu-links,
-		.menu-login {
+		#fb-login,
+		#gplus-login,
+		#login-with {
 			height: 40px;
 		}
 
@@ -442,8 +438,41 @@
 			position: relative;
 			float: right;
 			right: 0.15%;
-			width: 160px;
-			font-size: 1.25em;
-			border: none;
-			border: none;
+			width: 235px;
+			margin: 2px 0;
 		}
+
+		#login-with {
+			float: left;
+			margin-right: 20px;
+		}
+
+		#login-with p {
+			color: #FFF;
+			font-size: 1.25em;
+			font-family: 'Raleway-Light', sans-serif;
+			text-align: center;
+			margin-top: 10px;
+		}
+
+		#fb-login,
+		#gplus-login {
+			width: 80px;
+			font-size: 30px;
+			margin: 0;
+			border: 0;
+		}	
+
+		#gplus-login {
+			float: left;
+		}
+
+		#fb-login p {
+			margin: 5px 0;
+		}
+
+		#gplus-login p {
+			margin: 7px 0;
+		}
+
+	}
