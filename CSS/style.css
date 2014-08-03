@@ -44,6 +44,25 @@
 		outline: 0;
 	}
 
+	#overlay {
+		background: rgba(0,0,0, 0.7);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		display: none;
+}
+
+	#overlay-iframe {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -212px;
+		margin-top: -182px;
+	}
+
 
 /*----------------------------------------------------------------------------------*/
 /*                                  Header                                          */
@@ -111,7 +130,7 @@
 
 	.header-nav-right li {
 		display: inline-block;
-		font-size: 1.75em;
+		font-size: 1.5em;
 		font-family: 'Raleway-Light', sans-serif;
 		font-weight: normal;
 		margin-right: 5px;
@@ -150,6 +169,8 @@
 		position: absolute;
 		top: 10;
 		right: 0;
+		color: purple;
+		z-index: 10
 	}
 
 	.menu-close a {
@@ -402,9 +423,13 @@
 			margin: 0;
 			width: 100%;
 			border-right: 0;
+
+			/*  Hidden when not logged in  */
+			display: none;
 		}
 
 		.menu-links {
+			display: none;
 			float: left;
 			margin: 0 0 0 1%;
 		}
@@ -436,6 +461,10 @@
 
 		.menu-links ul li:first-child {
 			border-left: 0;
+		}
+
+		.login {
+			display: none;
 		}
 
 		.menu-login {
