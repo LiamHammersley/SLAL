@@ -9,13 +9,13 @@
 	}
 
 		.profile-header-center {
-			width: 75%;
+			width: 100%;
 			margin: auto;
 		}
 
 			.profile-header-center-photo {
 				display: inline-block;
-				margin: 20px 2%;
+				margin: 20px 1%;
 				float: left;
 				background: url('../img/profile photos/liamhammersley-profile.jpg'), #FFF;
 				background-size: cover;
@@ -30,6 +30,7 @@
 				float: left;
 				display: table;
 				height: 225px;
+				width: 40%;
 				color: #FFF;
 				font-family: 'Raleway-Light', sans-serif;
 			}
@@ -69,7 +70,8 @@
 					position: middle;
 					list-style: none;
 					text-align: center;
-					width: 170px;
+					width: 160px;
+					border-left: 2px solid rgba(78, 148, 191, 1);
 				}
 
 				.profile-header-center-links a:link {
@@ -86,9 +88,9 @@
 					color: #B6E5FF;
 				}
 
-				#selected {
+				/*#selected {
 					background: #FFF;
-				}
+				}*/
 
 				#profile-header-middle {
 					position: relative;
