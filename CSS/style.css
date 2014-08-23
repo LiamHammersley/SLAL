@@ -372,6 +372,7 @@
 /*------------------------------- Login Box ---------------------------------------*/
 
 	.login {
+		display: none;
 		position: absolute;
 		top: 20%;
 		left: 38%;

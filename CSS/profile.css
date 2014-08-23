@@ -1,21 +1,20 @@
 /*-------------------------------- Profile ----------------------------------------*/
 
-	.profile-header {
+.profile-header {
 		position: relative;
 		display: inline-block;
 		width: 100%;
-		height: 225px;
+		height: 290px;
 		background: rgba(48,144,204,1);
 	}
 
 		.profile-header-center {
 			width: 100%;
-			margin: auto;
 		}
 
 			.profile-header-center-photo {
 				display: inline-block;
-				margin: 20px 1%;
+				margin: 20px 3% 20px 2%;
 				float: left;
 				background: url('../img/profile photos/liamhammersley-profile.jpg'), #FFF;
 				background-size: cover;
@@ -53,46 +52,86 @@
 					color: #B6E5FF;
 				}
 
-			.profile-header-center-links, 
-			.profile-header-center-links ul,
-			.profile-header-center-links ul li {
-				height: 225px;
-				margin: 0;
-				padding: 0;
+			.profile-header-center-links {
+				display: table;
+				position: bottom;
+				float: right;
+				width: 100%;
+				border-top: 1px solid rgba(31, 106, 153, .4);
 			}
+
+			.profile-header-center-links div {
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+			}
+
+			.profile-header-center-links div {
+				height: 65px;
+				color: #FFF;
+				font-family: 'Raleway-Light', sans-serif;
+				font-size: 1.8em;
+			}
+
+			.profile-header-center-links div a:link {
+				color: #FFF;
+			}
+
+			.profile-header-center-links div a:visited {
+				color: #FFF;
+			}
+
+			#selected {
+				background: #FFF;
+			}
+
+			#selected a:link {
+				color: rgb(48,144,204);
+			}
+
+
+/* --------------------------------------------------------------------------------*/
+/* ------------------------------ Media Queries -----------------------------------*/
+/* --------------------------------------------------------------------------------*/
+
+
+/*  Need to fix up width to go to 100% between 780px and 1100px  */
+@media only screen and (max-width: 1100px) {
+	
+	.profile-header-center {
+		width: 100%;
+	}
+
+}
+
+
+@media only screen and (min-width: 780px) {
+
+	.profile-header {
+		height: 225px;
+	}
+
+		.profile-header-center {
+			width: 80%;
+			margin: auto;
+		}
 
 			.profile-header-center-links {
+				width: 30%;
 				float: right;
+				height: 225px;
+				position: right;
+				margin: -1px 0 0 0;
 			}
 
-				.profile-header-center-links ul li {
-					display: inline-block;
-					position: middle;
-					list-style: none;
-					text-align: center;
+				.profile-header-center-links div {
 					width: 160px;
-					border-left: 2px solid rgba(78, 148, 191, 1);
-				}
-
-				.profile-header-center-links a:link {
 					font-family: 'Raleway-regular', sans-serif;
 					font-size: 1.8em;
-					color: #B6E5FF;
 				}
-
-				.profile-header-center-links a:hover {
-					color: red ;
-				}
-
-				.profile-header-center-links a:visited {
-					color: #B6E5FF;
-				}
-
-				/*#selected {
-					background: #FFF;
-				}*/
 
 				#profile-header-middle {
 					position: relative;
 					top: 85px;
 				}
+}
