@@ -85,10 +85,38 @@
 				background: #FFF;
 			}
 
-			#selected a:link {
+			#selected a:link,
+			#selected a:visited {
 				color: rgb(48,144,204);
 			}
 
+			.profile-header-center-links div a:hover,
+			#selected a:hover {
+				color: #295E7F;
+				font-size: 1.05em
+			}
+
+.fs_userdetails1 {
+	font-family: 'Raleway-Light', sans-serif;
+	font-size: 1.1em;
+	width: 420px;
+	border: none;
+	margin: auto;
+}
+
+.fs_userdetails1 label {
+	font-family: 'Raleway-regular', sans-serif;
+}
+
+	.UserTextBox, 
+	.UserTextArea {
+		width: 340px;
+	}
+
+	.UserTextArea {
+		height: 180px;
+		overflow: auto;
+	}
 
 /* --------------------------------------------------------------------------------*/
 /* ------------------------------ Media Queries -----------------------------------*/
@@ -130,7 +158,7 @@
 			}
 
 				.profile-header-center-links div {
-					width: 160px;
+					width: 160px;	
 					font-family: 'Raleway-regular', sans-serif;
 					font-size: 1.8em;
 				}
