@@ -29,7 +29,7 @@
 				float: left;
 				display: table;
 				height: 225px;
-				width: 40%;
+				width: 60%;
 				color: #FFF;
 				font-family: 'Raleway-Light', sans-serif;
 			}
@@ -94,27 +94,32 @@
 /* ------------------------------ Media Queries -----------------------------------*/
 /* --------------------------------------------------------------------------------*/
 
-
-/*  Need to fix up width to go to 100% between 780px and 1100px  */
-@media only screen and (max-width: 1100px) {
-	
-	.profile-header-center {
-		width: 100%;
+@media only screen and (max-width: 580px) {
+	.profile-header-center-photo {
+		display: none;
 	}
 
+	.profile-header-center-name {
+		width: 100%;
+		margin-left: 2%;
+		text-align: center;
+	}
 }
 
-
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 900px) {
 
 	.profile-header {
 		height: 225px;
 	}
 
 		.profile-header-center {
-			width: 80%;
+			width: 100%;
 			margin: auto;
 		}
+
+			.profile-header-center-name {
+				width: 40%;
+			}
 
 			.profile-header-center-links {
 				width: 30%;
@@ -130,8 +135,15 @@
 					font-size: 1.8em;
 				}
 
-				#profile-header-middle {
-					position: relative;
-					top: 85px;
-				}
+		#profile-header-middle {
+			position: relative;
+			top: 85px;
+		}
+}
+
+@media only screen and (min-width: 1300px) {
+	
+	.profile-header-center {
+		width: 80%;
+	}
 }
