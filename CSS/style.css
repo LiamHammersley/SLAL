@@ -75,6 +75,23 @@
 		clear: both;
 	}
 
+	h1 {
+		font-style: 'Raleway-regular', sans-serif;
+	}
+
+	h2 {
+		font-style: 'Raleway-light', sans-serif;
+		font-weight: lighter;
+		font-style: italic;
+	}
+
+	.spacer {
+		display: block;
+		height: 20px;
+		width: 100%;
+	}
+
+
 /*----------------------------------------------------------------------------------*/
 /*                                  Header                                          */
 /*----------------------------------------------------------------------------------*/
@@ -90,8 +107,9 @@
 	}
 
 	header,
-	.header-nav-right {
-		height: 65px;
+	.header-nav-right,
+	.header-logo-link {
+		height: 45px;
 	}
 
 	.header-nav-left {
@@ -101,31 +119,30 @@
 
 	.pullout {
 		float: left;
-		margin: 14px 5% 0 5%;
+		margin: 6px 5% 0 5%;
 	}
 
 	#pullout-bars {
 		background: #696969;
-		height: 6px;
-		width: 33px;
+		height: 5px;
+		width: 30px;
 		border-radius: 2px;
-		margin: 5px;
+		margin: 4px;
 	}
 
 	.header-logo-link {
 		display: block;
-		height: 65px;
 		width: 200px;
 		margin-left: 20px;
 	}
 
 	.nav-logo {
-		height: 55px;
+		height: 35px;
 		padding: 5px 0;
 	}
 
 	.nav-logo-text {
-		display: inline-block;
+		display: none;
 		height: 47px;
 		padding: 7px;
 	}
@@ -311,9 +328,7 @@
 		overflow: hidden;
 	}
 
-	.content {
-		overflow: visible;
-	}
+
 
 /* --------------------------------------------------------------------------------*/
 /*                                  Footer                                         */
@@ -499,7 +514,7 @@
 		width: 100%;
 		background: #E8E8E8;
 		z-index: -1;
-		overflow: auto;
+		overflow: visable;
 	}
 
 
@@ -507,16 +522,27 @@
 /* ------------------------------ Media Queries -----------------------------------*/
 /* --------------------------------------------------------------------------------*/
 
-@media only screen and (max-width: 650px) {
-		.nav-logo-text {
-			display: none;
-		}
-}
-
 @media only screen and (min-width: 780px)  {
 
-		.nav-logo-text {
-			display: inline-block;
+		header,
+		.header-nav-right,
+		.header-logo-link {
+			height: 65px;
+		}
+
+		.pullout {
+			margin: 14px 5% 0 5%;
+		}
+
+		#pullout-bars {
+			background: #696969;
+			height: 6px;
+			width: 33px;
+			margin: 5px;
+		}
+
+		.nav-logo {
+			height: 55px;
 		}
 
 		.header-nav-right {
@@ -525,6 +551,10 @@
 
 		#menu-social-network-icons {
 			display: none;
+		}
+
+		.nav-logo-text {
+			display: inline-block;
 		}
 
 		footer {

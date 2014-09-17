@@ -1,7 +1,105 @@
-	.content {
-		display: block;
-		height: 98%;
-		width: 98%;
-		background: rgba(255, 255, 255, 0.3);
-		border-radius: 5px;
+/* --------------------------------------------------------------------------------*/
+/*                                  Location                                       */
+/* --------------------------------------------------------------------------------*/
+
+	h1 {
+		font-size: 1.5em;
+		margin: 0px;
+		margin-top: 10px;
+		margin-left: 15px;
 	}
+
+	h2 {
+		font-size: 1em;
+		margin: 0px;
+		margin-left: 15px;
+		margin-bottom: 10px;
+	}
+
+	.location_Title {
+		float: left;
+	}
+
+	.location_Submitter {
+		display: none;
+		margin: 10px 3%;
+		float: right;
+		background: url('../img/profile photos/default.png'), #FFF;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 115px;
+		height: 115px;
+		border: 5px solid rgba(103,215,224,1);
+		border-radius: 50%;
+	}
+
+	.location_Images,
+	#location_Size {
+		height: 150px;
+	}
+
+	.location_Images {
+		background: #404040;
+		overflow: hidden;
+		height: 150px;
+		width: 100%;
+	}
+
+	#location_Size {
+		float: left;
+		background-size: cover;
+		max-width: 200px;
+		min-width: 100px;
+		width: 50%;
+		border: 1px solid #808080;
+		box-sizing: border-box;
+	}
+
+	.location_pickeringPoint_1 {
+		background: url('../img/locations/pickering_point/1.jpg'), black;
+	}
+
+	.location_pickeringPoint_2 {
+		background: url('../img/locations/pickering_point/2.jpg'), black;
+	}
+	.location_pickeringPoint_3 {
+		background: url('../img/locations/pickering_point/3.jpg'), black;
+	}
+	.location_pickeringPoint_4 {
+		background: url('../img/locations/pickering_point/4.jpg'), black;
+	}
+
+	.location_Descrition {
+		display: block;
+		width: 90%;
+		margin: auto;
+	}
+
+	.location_Descrition ul li {
+		list-style: none;
+		margin-left: -30px;
+	}
+
+
+	.location_Descrition span {
+		font-weight: bold;
+	}
+
+/*----------------------------- Embedded Google Map  ------------------------------*/
+
+	#gmap_canvas,
+	.location_MapWrapper {
+		overflow: hidden;
+		height: 300px;
+		width: 100%;
+	}
+
+/* --------------------------------------------------------------------------------*/
+/* ------------------------------ Media Queries -----------------------------------*/
+/* --------------------------------------------------------------------------------*/
+
+/*	@media only screen and (min-width: 780px)  {
+
+		.location_Submitter {
+			display: inline-block;
+		}*/
