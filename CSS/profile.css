@@ -1,10 +1,9 @@
-/*-------------------------------- Profile ----------------------------------------*/
-html {
-	background: #E8E8E8;
-}
-.content {
-	overflow: visible;
-}
+/* --------------------------------------------------------------------------------*/
+/*                                  Profile                                        */
+/* --------------------------------------------------------------------------------*/
+
+/*------------------------------- Profile Header ----------------------------------*/
+
 .profile-header {
 		position: relative;
 		display: inline-block;
@@ -100,6 +99,8 @@ html {
 				color: #295E7F;
 			}
 
+/*------------------------------ Profile Forms Area -------------------------------*/
+
 .profile_FormsCenter {
 	width: 560px;
 	margin-left: 5%;
@@ -131,8 +132,9 @@ html {
 		}
 
 		.profile_Image {
+			
 			display: inline-block;
-			background: url('../img/profile photos/liamhammersley-profile.jpg'), #FFF;
+			background: linear-gradient(to right, rgba(255, 255, 255, .4),  rgba(255, 255, 255, .4)), url('../img/profile photos/default.png'), #FFF;
 			background-size: cover;
 			background-repeat: no-repeat;
 			width: 150px;
@@ -140,6 +142,7 @@ html {
 			border: 4px solid #808080;
 			border-radius: 50%;
 			margin-top: 10px;
+			-webkit-filter:grayscale(1);
 		}
 
 		.profile_ConfigureImage p {
@@ -149,20 +152,12 @@ html {
 		
 		.profile_ConfigureImage button {
 			color: #FFF;
+			background: #5eaae5; 
 			border: 1px solid #2447B2;
 			font-family: 'Raleway-light', sans-serif;
 			font-size: .9em;
 			padding: 8px 12px;
 			margin-bottom: 10px;
-
-			background: #3f9ce2; /* Old browsers */
-			background: -moz-linear-gradient(top,  #3f9ce2 0%, #5eaae5 49%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f9ce2), color-stop(49%,#5eaae5)); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top,  #3f9ce2 0%,#5eaae5 49%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top,  #3f9ce2 0%,#5eaae5 49%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top,  #3f9ce2 0%,#5eaae5 49%); /* IE10+ */
-			background: linear-gradient(to bottom,  #3f9ce2 0%,#5eaae5 49%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f9ce2', endColorstr='#5eaae5',GradientType=0 ); /* IE6-9 */
 		} 
 
 		.profile_InputConnectSocial img {
@@ -233,7 +228,6 @@ html {
 }
 
 @media only screen and (min-width: 641px) and (max-width: 899px) {
-
 		.profile_FormsCenter {
 			margin: auto;
 	}
@@ -241,7 +235,6 @@ html {
 
 
 @media only screen and (min-width: 900px) {
-
 	.profile-header {
 		height: 225px;
 	}
@@ -305,13 +298,7 @@ html {
 		position: relative;
 		left: 330px;
 		top: -20px;
-		color: #FFF;
-		font-family: 'Raleway-Light', sans-serif;
 		width: 200px;
 		height: 65px;
-		border: 1px solid #808080;
-
-		background: #3f9ce2;
 	}
-
 }
