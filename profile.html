@@ -45,28 +45,88 @@
 					</span>
 				</div>
 				<div class="profile-header-center-links">
-						<div id="selected"><a href="#bl">Bucket List</a></div>
-						<div><a href="#fav">Favorites</a></div>
+						<div><a href="#bl">Bucket List</a></div>
+						<div id="selected"><a href="#fav">Favorites</a></div>
 				</div>
 			</div>
 		</div>
 
-		<form>
-			<fieldset class="fs_userdetails1">
-				<p><label for="User_UserName">Username:</label><br>
-				<input type="text" class="UserTextBox" id="User_UserName" name="User_UserName" value="LiamHammo"></p>
-				<p><label for="User_FirstName">First Name:</label><br>
-				<input type="text" class="UserTextBox" id="User_FirstName" name="User_FirstName" value="Liam"></p>
-				<p><label for="User_LastName">Last Name:</label><br>
-				<input type="text" class="UserTextBox" id="User_LastName" name="User_LastName" value="Hammersley"></p>
-				<p><label for="User_email">Email:</label><br>
-				<input type="text" class="UserTextBox" id="User_email" name="User_email" value="liam@liamjh.com"></p>
-				<p><label for="User_bio">About You:</label><br>
-				<textarea class="UserTextArea" id="User_bio" name="User_bio"></textarea></p>
-			</fieldset>
-		</form>
+		<div class="profile_FormsCenter">
+			<div class="profile_InputForms float_left">
+				<form>
+					<fieldset>
+						<p><label for="User_UserName">Username:</label><br>
+						<input type="text" class="UserTextBox" id="User_UserName" name="User_UserName"></p>
+						<p><label for="User_FirstName">First Name:</label><br>
+						<input type="text" class="UserTextBox" id="User_FirstName" name="User_FirstName"></p>
+						<p><label for="User_LastName">Last Name:</label><br>
+						<input type="text" class="UserTextBox" id="User_LastName" name="User_LastName"></p>
+						<p><label for="User_email">Email:</label><br>
+						<input type="text" class="UserTextBox" id="User_email" name="User_email"></p>
+						<p><label for="User_bio">About You:</label><br>
+						<textarea class="UserTextArea" id="User_bio" name="User_bio"></textarea></p>
+					</fieldset>
+				</form>
+			</div>
+
+			<div class="profile_ConfigureImage float_left">
+				<div class="profile_Image"></div>
+				<p>Maximum file size: 500kb. Maximum Image Size 500px x 500px</p>
+				<button type="button">Upload New</button>
+			</div>
+			
+			<div class="profile_InputLocation float_left">
+				<form>
+					<fieldset>
+						<p><label for="User_UserLocation">Location:</label><br>
+						<input type="text" class="UserTextBox" id="User_UserLocation" name="User_UserLocation"></p>
+						<input type="text" class="UserTextBox" id="User_UserLocation2" name="User_UserLocation2"></p>
+						<input type="text" class="UserTextBox" id="User_UserLocation3" name="User_UserLocation3"></p>
+					</fieldset>
+				</form>
+			</div>
+
+			<div class="profile_InputSocialMediaAndWeb float_left clear_both">
+				<form>
+					<fieldset>
+						<p><label for="User_Website">Website:</label><br>
+						<input type="text" class="UserTextBox" id="User_Website" name="User_Website"></p>
+						<p><label for="User_Facebook">Facebook:</label><br>
+						<input type="text" class="UserTextBox" id="User_Facebook" name="User_Facebook"></p>
+						<p><label for="User_Twitter">Twitter:</label><br>
+						<input type="text" class="UserTextBox" id="User_Twitter" name="User_Twitter"></p>
+						<p><label for="User_GPlus">Google+:</label><br>
+						<input type="text" class="UserTextBox" id="User_GPlus" name="User_GPlus"></p>
+						<p><label for="User_Tumblr">Tumblr:</label><br>
+						<input type="text" class="UserTextBox" id="User_Tumblr" name="User_Tumblr"></p>
+						<p><label for="User_Flickr">Flickr:</label><br>
+						<input type="text" class="UserTextBox" id="User_Flickr" name="User_Flickr"></p>
+					</fieldset>
+				</form>
+			</div>
+			
+			<div class="profile_InputConnectSocial float_left">
+				<p><label>Connect your Facebook Account</label>
+				<a href="#fb_login"><img src="img/fb_login.png"></a></p>
+				<p><label>Connect your Twitter Account</label>
+				<a href="#twitter_login"><img src="img/twitter_login.png"></a></p>
+				<p><label>Connect your Google+ Account</label>
+				<a href="#gplus_login"><img src="img/gplus_login.png"></a></p>
+				<span class="profile_DeleteAccount">
+					<p>Delete your account?</p>
+					<button>Delete Account</button>
+				</span>
+			</div>
+
+			<div class="profile_Save float_left">
+				<button>Save</button>
+			</div>
+		</div>
+		
+		<div class="spacer float_left clear_both"></div>
 
 	</div>
+
 	
 	<footer>
 		<span id="footer-links">
@@ -89,5 +149,3 @@
 	<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
-
-

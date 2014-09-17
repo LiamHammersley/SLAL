@@ -53,8 +53,27 @@
 		left: 0;
 		z-index: 5;
 		display: none;
-}
+	}
 
+	.float_left {
+		float: left;
+	}
+
+	.float_right {
+		float: right;
+	}
+
+	.clear-left {
+		clear: left;
+	}
+
+	.clear_right {
+		clear: right;
+	}
+
+	.clear_both {
+		clear: both;
+	}
 
 /*----------------------------------------------------------------------------------*/
 /*                                  Header                                          */
@@ -146,7 +165,7 @@
 		display: block;
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: -310px;
 		z-index: 1;
 		height: 100%;
 		width: 300px;
@@ -474,7 +493,17 @@
 /* ------------------------------ Media Queries -----------------------------------*/
 /* --------------------------------------------------------------------------------*/
 
-@media only screen and (min-width: 780px) {
+@media only screen and (max-width: 650px) {
+		.nav-logo-text {
+			display: none;
+		}
+}
+
+@media only screen and (min-width: 780px)  {
+
+		.nav-logo-text {
+			display: inline-block;
+		}
 
 		.header-nav-right {
 			display: inline-block;

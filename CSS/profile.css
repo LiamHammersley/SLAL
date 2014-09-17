@@ -1,5 +1,10 @@
 /*-------------------------------- Profile ----------------------------------------*/
-
+html {
+	background: #E8E8E8;
+}
+.content {
+	overflow: visible;
+}
 .profile-header {
 		position: relative;
 		display: inline-block;
@@ -57,7 +62,7 @@
 				position: bottom;
 				float: right;
 				width: 100%;
-				border-top: 1px solid rgba(31, 106, 153, .4);
+				background: rgba(48,144,204,1);
 			}
 
 			.profile-header-center-links div {
@@ -93,36 +98,128 @@
 			.profile-header-center-links div a:hover,
 			#selected a:hover {
 				color: #295E7F;
-				font-size: 1.05em
 			}
 
-.fs_userdetails1 {
-	font-family: 'Raleway-Light', sans-serif;
-	font-size: 1.1em;
-	width: 420px;
-	border: none;
-	margin: auto;
+.profile_FormsCenter {
+	width: 560px;
+	margin-left: 5%;
 }
-
-.fs_userdetails1 label {
-	font-family: 'Raleway-regular', sans-serif;
-}
-
-	.UserTextBox, 
-	.UserTextArea {
-		width: 340px;
+	
+	.profile_InputForms,
+	.profile_InputLocation,
+	.profile_ConfigureImage,
+	.profile_InputSocialMediaAndWeb,
+	.profile_InputConnectSocial,
+	.profile_Save {
+		background: #FFF;
+		font-family: 'Raleway-Light', sans-serif;
+		font-size: 1.1em;
+		width: 500px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 5px 30px 5px 25px;
 	}
 
-	.UserTextArea {
-		height: 180px;
-		overflow: auto;
-	}
+		.UserTextBox, 
+		.UserTextArea {
+			width: 500px;
+		}
+
+		.UserTextArea {
+			height: 180px;
+			overflow: auto;
+		}
+
+		.profile_Image {
+			display: inline-block;
+			background: url('../img/profile photos/liamhammersley-profile.jpg'), #FFF;
+			background-size: cover;
+			background-repeat: no-repeat;
+			width: 150px;
+			height: 150px;
+			border: 4px solid #808080;
+			border-radius: 50%;
+			margin-top: 10px;
+		}
+
+		.profile_ConfigureImage p {
+			font-family: 'Raleway-Light', sans-serif;
+			font-size: .8em;
+		}
+		
+		.profile_ConfigureImage button {
+			color: #FFF;
+			border: 1px solid #2447B2;
+			font-family: 'Raleway-light', sans-serif;
+			font-size: .9em;
+			padding: 8px 12px;
+			margin-bottom: 10px;
+
+			background: #3f9ce2; /* Old browsers */
+			background: -moz-linear-gradient(top,  #3f9ce2 0%, #5eaae5 49%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f9ce2), color-stop(49%,#5eaae5)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #3f9ce2 0%,#5eaae5 49%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #3f9ce2 0%,#5eaae5 49%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #3f9ce2 0%,#5eaae5 49%); /* IE10+ */
+			background: linear-gradient(to bottom,  #3f9ce2 0%,#5eaae5 49%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f9ce2', endColorstr='#5eaae5',GradientType=0 ); /* IE6-9 */
+		} 
+
+		.profile_InputConnectSocial img {
+			display: block;
+			margin: 5px 0 0 20px;
+		}
+
+		.profile_DeleteAccount {
+			font-style: italic;
+			font-family: "Raleway-light", sans-serif;
+			font-size: 1em;
+			text-align: center;
+		}
+
+		.profile_DeleteAccount p {
+			margin: 30px 0 5px 0;
+		}
+
+		.profile_DeleteAccount button {
+			background: #1B4462;
+			width: 400px;
+			height: 60px;
+			color: #FFF;
+			border: 3px solid #47657B;
+			font-style: normal;
+			margin: 5px 0 15px 50px;
+		}
+
+		.profile_DeleteAccount button:hover {
+			background: #345062;
+		}
+
+		.profile_Save {
+			background: none
+		}
+
+		.profile_Save button {
+			color: #FFF;
+			background: #3f9ce2;
+			font-family: 'Raleway-regular', sans-serif;
+			font-size: 1.5em;
+			width: 100%;
+			height: 80px;
+			border: 1px solid #808080;
+		}
+
+		.spacer {
+			display: block;
+			height: 20px;
+			width: 100%;
+		}
 
 /* --------------------------------------------------------------------------------*/
 /* ------------------------------ Media Queries -----------------------------------*/
 /* --------------------------------------------------------------------------------*/
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 640px) {
 	.profile-header-center-photo {
 		display: none;
 	}
@@ -132,7 +229,16 @@
 		margin-left: 2%;
 		text-align: center;
 	}
+
 }
+
+@media only screen and (min-width: 641px) and (max-width: 899px) {
+
+		.profile_FormsCenter {
+			margin: auto;
+	}
+}
+
 
 @media only screen and (min-width: 900px) {
 
@@ -167,6 +273,14 @@
 			position: relative;
 			top: 85px;
 		}
+
+		.profile-header-center-links {
+			border-top: 1px solid #FFF;
+		}
+
+		.profile_FormsCenter {
+			margin: auto;
+	}
 }
 
 @media only screen and (min-width: 1300px) {
@@ -174,4 +288,30 @@
 	.profile-header-center {
 		width: 80%;
 	}
+
+	.profile_FormsCenter {
+		width: 1200px;
+	}
+	.profile_InputForms,
+	.profile_InputLocation,
+	.profile_ConfigureImage,
+	.profile_InputSocialMediaAndWeb,
+	.profile_InputConnectSocial,
+	.profile_Save {
+		margin: 20px;
+	}
+
+	.profile_Save button {
+		position: relative;
+		left: 330px;
+		top: -20px;
+		color: #FFF;
+		font-family: 'Raleway-Light', sans-serif;
+		width: 200px;
+		height: 65px;
+		border: 1px solid #808080;
+
+		background: #3f9ce2;
+	}
+
 }
